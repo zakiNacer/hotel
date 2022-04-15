@@ -1,0 +1,1480 @@
+/*
+Rouge clair : #4f202b;
+Rouge foncÃ© : #2e0d14;
+*/
+
+@font-face{
+	font-family:'Din_Bold';
+	src: url('fonts/DIN-Bold.eot') format('eot'), url('fonts/DIN-Bold.woff') format('woff'), url('fonts/DIN-Bold.ttf') format('truetype');
+  }
+  
+  @font-face{
+	font-family:'nether';
+	src: url('fonts/nether.eot') format('eot'), url('fonts/nether.woff') format('woff'), url('fonts/nether.ttf') format('truetype');
+  }
+  
+  @font-face{
+	font-family:'Din_Regular';
+	src: url('fonts/DIN-Regular.eot') format('eot'), url('fonts/DIN-Regular.woff') format('woff'), url('fonts/DIN-Regular.ttf') format('truetype');
+  }
+  
+  @font-face{
+	font-family:'Din_Medium';
+	src: url('fonts/DIN-Medium.eot') format('eot'), url('fonts/DIN-Medium.woff') format('woff'), url('fonts/DIN-Medium.ttf') format('truetype');
+  }
+  
+  html, body{
+	  height: 100%;
+	  margin: 0;
+	  padding: 0;
+	  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	  min-width: 285px;
+  }
+  
+  ul, li{
+	  list-style: none;
+  }
+  
+  .img-minia{
+	  width: 190px;
+	  height: 190px;
+  }
+  
+  h1>span{
+	  display: block;
+	  font-size: 23px;
+	  font-family: 'Din_Regular';
+	  margin-top:-40px;
+  }
+  
+  h2{
+	  padding: 0px;
+	  margin: 0px;
+	  font-family: Din_Regular;
+	  font-size: 33px;
+	  color : #4f202b;
+  }
+  
+  h3{
+	  padding: 0px;
+	  margin: 0px;
+	  font-weight: normal;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+	  -webkit-appearance: none;
+	  -moz-appearance: none;
+	  appearance: none;
+	  margin: 0; 
+  }
+  
+  #contact_hotel_widget_reservation_container{
+	  width: 100% !important;
+  }
+  
+  #contact_hotel_widget_reservation_body{
+	  background-color: transparent !important;
+  }
+  
+  .zoombox{
+	  cursor: pointer;
+	  padding: 10px;
+	  display: inline-block;
+  }
+  
+  .zoombox img{
+	  width: 100%;
+	  height: 100%;
+	  image-orientation: from-image;
+	  object-fit: cover;
+  }
+  
+  .zoombox_content{
+	  height: 100%;
+	  width: 100%;
+  }
+  
+  .table{
+	  display: table;
+	  width: 70%;
+  }
+  
+  .tablerow{
+	  display: table-row;
+	  width: 100%;
+  }
+  
+  .tablecell{
+	  display: table-cell;
+  }
+  
+  .header-tablecell{
+	  display: table-cell;
+  }
+  
+  .tablecell-gauche{
+	  display: table-cell;
+	  text-align: left;
+  }
+  
+  .tablecell-droite{
+	  display: table-cell;
+	  text-align: right;
+  }
+  #conteneur{
+	  width: 100%;
+	  //height: 100%;
+	  background-color: #FFFFFF;
+  }
+  
+  #index-header{
+	  position: relative;
+	  margin: auto;
+	  text-align: center;
+	  display: table;
+	  width: 100%;
+	  height: auto;
+	  min-height: 170px;
+  }
+  
+  #index-hotel{
+	  position: relative;
+	  margin: auto;
+	  text-align: center;
+	  display: table;
+	  width: 100%;
+	  height: auto;
+	  min-height: 170px;
+	  padding-top: 4%;
+  }
+  
+  .arrow-down-rouge{
+	  display: inline-block;
+	  width: 0; 
+	  height: 0; 
+	  border-left: 13px solid transparent;
+	  border-right: 13px solid transparent;
+	  border-top: 13px solid #2e0d14;
+	  margin-right: 20px;
+	  margin-left: 20px;
+  }
+  
+  .barre-array-rouge{
+	  display: inline-block;
+	  width: 18%;
+	  border-top: 2px solid #2e0d14;
+	  height: 6px;
+  }
+  
+  .arrow-down-blanche{
+	  display: inline-block;
+	  width: 0; 
+	  height: 0; 
+	  border-left: 13px solid transparent;
+	  border-right: 13px solid transparent;
+	  border-top: 13px solid #FFFFFF;
+	  margin-right: 20px;
+	  margin-left: 20px;
+  }
+  
+  .arrow-down-blanche-seule{
+	  width: 0; 
+	  height: 0; 
+	  border-left: 13px solid transparent;
+	  border-right: 13px solid transparent;
+	  border-top: 13px solid #FFFFFF;
+	  margin :auto;
+	  display: table;
+	  top: 0;
+  }
+  
+  .barre-array-blanche{
+	  display: inline-block;
+	  width: 18%;
+	  border-top: 2px solid #FFFFFF;
+	  height: 6px;
+  }
+  
+  #index-hotel-titre{
+	  font-family: Din_Regular;
+	  font-size: 33px;
+	  color : #4f202b;
+  }
+  
+  #index-tarifs-titre{
+	  font-family: Din_Regular;
+	  font-size: 33px;
+	  color : #4f202b;
+  }
+  
+  
+  #index-header img{
+	  width: 100%;
+	  height: auto;
+  }
+  
+  /*HEADER*/
+  
+  #header{
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  top: 0px;
+  }
+  
+  #header-menu-tel{
+	  position: absolute;
+	  display: table;
+	  font-size: 22px; 
+	  font-family: Din_Bold;
+	  color: #FFFFFF;
+	  //float: right;
+	  right: 15%;
+	  top: 20px;
+  }
+  
+  #header-menu-tel-img{
+	  display: inline-block;
+	  height: 30px;
+	  width: 30px;
+	  vertical-align: middle;
+  }
+  
+  #header-menu-tel-img img{
+	  float: left;
+	  height: 30px;
+	  width: 30px;
+  }
+  
+  #header-menu-tel-numero{
+	  display: table-cell;
+	  width: 283px;
+	  height: 90px;
+	  vertical-align: middle;
+  }
+  
+  #header-menu-titre{
+	  position: relative;
+	  z-index: 1;
+  }
+  
+  #header-menu-titre-principal{
+	  font-family: nether;
+	  color: #FFFFFF;
+	  font-size: 66px;
+	  height: 180px;
+	  z-index: 0;
+	  position: relative;
+  }
+  
+  #header-menu-titre-principal-img{
+	  position: relative;
+	  width: 647px;
+	  height: 232px;
+	  background: no-repeat;
+	  display: inline-block;
+  }
+  
+  #header-menu-titre-principal h1{
+	  font-size: 66px;
+	  line-height: 82px;
+  }
+  
+  #header-menu-titre-secondaire{
+	  color: #4f202b;
+	  font-family: Din_Bold;
+	  padding: 10px;
+	  background-color: #FFFFFF;
+	  border-radius: 7px;
+	  display: inline-block;
+	  z-index: 1;
+	  position: relative;
+  }
+  
+  #header-menu-titre-secondaire label{
+	  margin: auto;
+	  font-weight: normal;
+	  font-size: 15px;
+	  cursor: pointer;
+  }
+  
+  #header-menu{
+	  margin-left: 15%;
+	  display: table;
+	  font-size: 18px;
+	  font-family: Din_Regular;
+	  width: 70%;
+	  position: absolute;
+	  bottom: 40px;
+	  z-index: 2;
+  }
+  
+  #header-menu a{
+	  text-decoration: none;
+	  color: #FFFFFF;
+  }
+  
+  #header-menu-resp{
+	  display: none;
+	  height: auto;
+	  width: 100%;
+	  padding: 5px;
+	  background-color: #4f202b;
+	  font-size: 18px;
+	  font-family: Din_Regular;
+	  text-align: left;
+	  position: relative;
+	  //left: 0px;
+	  top : -5px;
+	  z-index: 2;
+	  cursor: pointer;
+  }
+  
+  #header-menu-resp-titre{
+	  display: block;
+	  color: #FFFFFF;
+	  text-align: center;
+	  font-size: 28px;
+	  font-family: Din_Regular;
+	  cursor: pointer;
+  }
+  
+  #header-menu-resp img{
+	  width: 100%;
+	  height: auto;
+	  max-height: 50px;
+  }
+  
+  #header-menu-resp a{
+	  text-decoration: none;
+	  color: #FFFFFF;
+  }
+  
+  #menuresp-ul{
+	  margin: 0px;
+	  padding: 0px;
+	  list-style: none;
+	  height: 0px;
+	  overflow: hidden;
+  
+	  transition: 1s;
+  }
+  
+  #header-menu-resp li{
+	  margin: auto;
+	  padding: 0px;
+	  list-style: none;
+	  margin-bottom: 10px;
+	  display: table;
+	  text-align: center;
+  
+  }
+  
+  #header-menu-resp img{
+	  cursor: pointer;
+  }
+  
+  #header-menu-degrade{
+	  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+	  position: absolute;
+	  bottom: 0;
+	  height: 180px;
+	  width: 100%;
+	  vertical-align: middle;
+	  z-index: 0;
+  }
+  
+  #header-menu-degrade-2{
+	  background-image: linear-gradient(rgba(71,32,43,0), rgba(71,32,43,1));
+	  position: absolute;
+	  bottom: 0;
+	  height: 180px;
+	  width: 100%;
+	  vertical-align: middle;
+	  z-index: 0;
+  }
+  
+  #index-label-description-hotel{
+	  font-family: Din_Regular;
+	  font-size: 18px;
+	  color: #4f202b;
+	  width: 65%;
+	  margin: auto;
+  }
+  
+  #index-label-description-hotel label{
+	  display: block;
+	  text-align: left;
+  }
+  
+  #index-label-description-chambres{
+	  font-family: Din_Regular;
+	  font-size: 18px;
+	  color: #FFFFFF;
+	  width: 65%;
+	  margin: auto;
+  }
+  
+  #index-label-description-chambres label{
+	  display: block;
+	  text-align: left;
+  }
+  
+  #index-hotel-les-plus{
+	  font-size: 22px;
+	  font-family: Din_Bold;
+	  text-align: center;
+	  color: #4f202b;
+  }
+  
+  #index-hotel-picto{
+	  display: table;
+	  width: 65%;
+	  margin: auto;
+  }
+  
+  .hotel-picto-img{
+	  display: table-cell;
+  }
+  
+  #index-hotel-adherent{
+	  display: table;
+	  width: 65%;
+	  margin : auto;
+  }
+  
+  #hotel-adherent-titre{
+	  display: table-cell;
+	  vertical-align: middle;
+	  font-family: Din_Bold;
+	  color: #4f202b;
+	  font-size: 22px;
+  }
+  
+  .hotel-adherent-img{
+	  display: table-cell;
+  }
+  
+  #index-tarifs{
+	  text-align: center;
+	  padding-top: 4%;
+	  padding-bottom: 4%;
+  }
+  
+  #index-chambres{
+	  background-color: #4f202b;
+	  text-align: center;
+	  padding-top: 4%;
+  }
+  
+  #index-infos{
+	  background-color: #2e0d14;
+	  text-align: center;
+	  padding-top: 4%;
+  }
+  
+  #index-chambres-titre{
+	  color: #FFFFFF;
+	  font-family: Din_Regular;
+	  font-size: 33px;
+  }
+  
+  #index-photos-titre{
+	  color: #FFFFFF;
+	  font-family: Din_Regular;
+	  font-size: 33px;
+  }
+  
+  #index-reservation{
+	  width: 100%;
+	  background-color: #f5eee9;
+	  text-align: center;
+	  padding-top: 4%;
+  }
+  
+  #index-reservation-titre{
+	  color: #4f202b;
+	  font-family: Din_Regular;
+	  font-size: 33px;
+  }
+  
+  #index-infos-titre{
+	  color: #FFFFFF;
+	  font-family: Din_Regular;
+	  font-size: 33px;
+  }
+  
+  #index-photos{
+	  background-color: #2e0d14;
+	  text-align: center;
+	  padding-top: 4%;
+  }
+  
+  #index-photos-galerie{
+	  width: 65%;
+	  display: table;
+	  margin: auto;
+  }
+  
+  .index-photos-img{
+	  display: table-cell;
+	  border: 15px solid transparent;
+	  border-collapse: collapse;
+  }
+  
+  .index-photos-img img{
+	  width: 100%;
+	  height: auto;
+  }
+  
+  #index-tarifs-table{
+	  display: table;
+	  margin: auto;
+	  width: 65%;
+  }
+  
+  .index-tarifs-sous-titre{
+	  font-family: Din_Medium;
+	  font-size: 15px;
+	  color: #4f202b;
+	  display: table-cell;
+	  text-align: left;
+  }
+  
+  .index-tarifs-sous-titre-droit{
+	  font-family: Din_Medium;
+	  font-size: 15px;
+	  color: #4f202b;
+	  display: table-cell;
+	  text-align: left;
+	  padding-left: 25%;
+  }
+  
+  .tablecell-tarifs{
+	  display: table-cell;
+	  padding-left: 8%;
+  }
+  
+  .tarifs-details{
+	  font-family: Din_Regular;
+	  font-size: 15px;
+	  color: #4f202b;
+	  min-width: 60px;
+	  display: block;
+  }
+  
+  #index-image-hotel{
+	  width: 100%;
+	  height: auto;
+	  background-color: #f5eee9;
+  }
+  
+  #tourisme-image-hotel{
+	  background-color: #2e0d14;
+	  width: 100%;
+	  height: auto;
+	  background-color: #2e0d14;
+  }
+  
+  #index-image-hotel img{
+	  width: 100%;
+	  height: auto;
+	  //float: left;
+  }
+  
+  #tourisme-image-hotel img{
+	  width: 100%;
+	  height: auto;
+  }
+  
+  #index-label-description-reservation{
+	  font-family: Din_Regular;
+	  font-size: 15px;
+	  color: #4f202b;
+	  width: 65%;
+	  margin: auto;
+  }
+  
+  .infos-table{
+	  display: table;
+	  margin: auto;
+	  width: 55%;
+  }
+  
+  .infos-tablerow{
+	  display: table-row;
+	  text-align: left;
+  }
+  
+  .infos-tablerow img{
+	  vertical-align: bottom;
+  }
+  
+  
+  .infos-tablecell{
+	  display: table-cell;
+	  padding-left: 14%;
+  }
+  
+  .infos-tablecell-picto{
+	  display: table-cell;
+	  vertical-align: middle;
+  }
+  
+  .infos-tablecell-droite{
+	  display: table-cell;
+	  padding-left: 18%;
+  }
+  
+  .infos-table-titre{
+	  font-family: Din_Bold;
+	  font-size: 15px;
+	  color: #FFFFFF;
+  }
+  
+  .infos-details{
+	  font-family: Din_Regular;
+	  font-size: 15px;
+	  color: #FFFFFF;
+  }
+  
+  .infos-tablecell-space{
+	  width: 10px;
+  }
+  
+  #index-infos a{
+	  font-family: Din_Regular;
+	  font-size: 15px;
+	  color: #FFFFFF;
+  }
+  
+  .reservation-table{
+	  width: 65%;
+	  display: table;
+	  margin: auto;
+  }
+  
+  .reservation-tablerow{
+	  display: table-row;
+	  width: 100%;
+  }
+  
+  .reservation-tablecell{
+	  display: table-cell;
+  }
+  
+  .reservation-champs-long{
+	  font-family: Din_Regular;
+	  font-size: 18px;
+	  margin-bottom: 15px;
+	  padding: 10px;
+	  border : none;
+	  width: 85%;
+	  background-color: #FFFFFF;
+  }
+  
+  .reservation-champs-cours{
+	  font-family: Din_Regular;
+	  font-size: 18px;
+	  margin-bottom: 15px;
+	  padding: 10px;
+	  border : none;
+	  width: 70%;
+	  background-color: #FFFFFF;
+  }
+  
+  .reservation-champs-number{
+	  font-family: Din_Regular;
+	  font-size: 18px;
+	  margin-bottom: 15px;
+	  padding: 10px;
+	  border : none;
+	  width: 7%;
+	  background-color: #FFFFFF;
+	  -webkit-appearance: none; 
+  }
+  
+  #reservation-form{
+	  display: table;
+	  margin:auto;
+	  width: 300px;
+	  //text-align: left;
+  }
+  
+  .reservation-label{
+	  font-family: Din_Regular;
+	  font-size: 15px;
+	  color: #2e0d14;
+  }
+  
+  .reservation-btn{
+	  background-color: #2e0d14;
+	  padding: 7px;
+	  font-family: Din_Regular;
+	  font-size: 15px;
+	  color: #FFFFFF;
+	  border : none;
+	  cursor: pointer;
+	  outline: inherit;
+  }
+  
+  *{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  }
+  
+  label.form-control {
+	color: #767676;
+  }
+  
+  .form-col{
+	width: 33%;
+	padding: 15px;
+	float: left;
+  }
+   
+  .form-group{
+	width: 100%;
+	margin-bottom: 10px;
+  }
+   
+  .form-control{
+	display: block;
+	padding: 10px 5px;
+	width: 100%;
+	font-size: 18px;
+	font-family: Din_Regular;
+	text-transform: uppercase;
+	color: #000;
+	background: #FFF;
+	border: 0;
+  }
+  
+  .form-control[type=number]{
+	text-align: center;
+  }
+   
+  .form-number{
+	display: table;
+  }
+   
+  .form-number-label{
+	display: table-cell;
+	padding-right: 5px;
+	vertical-align: bottom;
+  }
+   
+  .form-number-value{
+	display: table-cell;
+	width: 50px;
+	padding-left: 5px;
+  }
+  
+  #reservation-message{
+	  height: 204px;
+	  resize: none;
+  }
+  
+  /*TOURISME*/
+  
+  #tourisme-sorties{
+	  display: table;
+	  width: 100%;
+	  margin: auto;
+	  text-align: center;
+	  padding-top: 2%;
+  }
+  
+  .tourisme-grand-titre{
+	  font-family: Din_Regular;
+	  font-size: 26px;
+	  color : #4f202b;
+  }
+  
+  .tourisme-titre{
+	  font-family: Din_Bold;
+	  font-size: 22px;
+	  color : #4f202b;
+  }
+  
+  .tourisme-titre-blanc{
+	  font-family: Din_Bold;
+	  font-size: 22px;
+	  color : #FFFFFF;
+  }
+  
+  .tourisme-bloc{
+	  display: table;
+	  width: 100%;
+	  height: 400px;
+  }
+  
+  .tourisme-cell-beige{
+	  display: table-cell;
+	  width: 50%;
+	  background-color: #f5eee9;
+	  height: 100%;
+  }
+  
+  .tourisme-cell-blanche{
+	  display: table-cell;
+	  width: 50%;
+	  background-color: #FFFFFF;
+	  height: 100%;
+  }
+  
+  .tourisme-table-gauche, .tourisme-table-droite{
+	  display: table;
+	  height: auto;
+	  width: 448px;
+	  float: right;
+	  margin-top: 20px;
+  }
+  
+  .tourisme-cell-gauche{
+	  display: table-cell;
+	  height: 100%;
+	  float: left;
+  }
+  
+  .tourisme-cell-droite{
+	  display: table-cell;
+	  height: 100%;
+	  float: right;
+  }
+  
+  .tourisme-cell-droite-blanc{
+	  display: table-cell;
+	  height: 100%;
+	  float: right;
+  }
+  
+  .tourisme-cell-droite a{
+	  color: orange;
+	  font-family: Din_Bold;
+	  font-size: 18px;
+	  text-decoration: none;
+  }
+  
+  .tourisme-cell-droite-blanc a{
+	  color: #FFFFFF;
+	  font-family: Din_Regular;
+	  font-size: 18px;
+	  text-decoration: none;
+  }
+  
+  .tourisme-img-gauche, .tourisme-img-droite{
+	  padding-top: 20px;
+	  float: right;
+	  display: block;
+  }
+  
+  .tourisme-label-gauche, .tourisme-label-droite{
+	  height: auto;
+	  padding-right: 20px;
+	  font-family: Din_Regular;
+	  font-size: 15px;
+	  color : #4f202b;
+	  float: left;
+	  display: block;
+	  margin-left: 20px;
+	  margin-top: 20px;
+  }
+  
+  .tourisme-label-gauche-blanc, .tourisme-label-droite-blanc{
+	  height: auto;
+	  padding-right: 20px;
+	  font-family: Din_Regular;
+	  font-size: 15px;
+	  color : #ffffff;
+	  float: left;
+	  display: block;
+	  margin-left: 20px;
+	  margin-top: 20px;
+  }
+  
+  .tourisme-contenu-droite{
+	  width: 468px;
+	  height: 100%;
+	  float: left;
+	  text-align: left;
+  }
+  
+  .tourisme-contenu-gauche{
+	  margin-right: 20px;
+	  width: 468px;
+	  height: 100%;
+	  float: right;
+	  text-align: left;
+  }
+  
+  .tourisme-sous-titre{
+	  padding-right: 22px;
+	  font-family: Din_Bold;
+	  font-size: 18px;
+	  color : #4f202b;
+  }
+  
+  .tourisme-sous-titre-blanc{
+	  padding-right: 22px;
+	  font-family: Din_Bold;
+	  font-size: 18px;
+	  color : #FFFFFF;
+  }
+  
+  #tourisme-monuments{
+	  background-color: #4f202b;
+	  text-align: center;
+  }
+  
+  #tourisme-villes{
+	  background-color: #2e0d14;
+	  text-align: center;
+  }
+  
+  .villes-flex{
+	  display: flex;
+	  width: 50%;
+	  height: auto;
+	  margin : auto;
+	  text-align: center;
+	  flex-wrap: wrap;
+  }
+  
+  .villes-tablerow{
+	  display: table-row;
+	  width: 100%;
+	  height: 100%;
+  }
+  
+  .villes-bloc{
+	  height: 235px;
+	  width: 175px;
+	  margin: auto;
+  }
+  
+  .villes-img{
+	  width: 90%;
+  }
+  
+  .villes-decouvrir{
+	  font-family: Din_Bold;
+	  font-size: 18px;
+	  color : #FFFFFF;
+	  text-decoration: none;
+  }
+  
+  .villes-label{
+	  font-family: Din_Bold;
+	  font-size: 18px;
+	  color : #FFFFFF;
+  }
+  
+  /*CSS TOURISME FLEX*/
+  
+  .tourisme-bloc-flex{
+	  display: flex;
+	  height: 427px;
+	  flex-wrap: wrap;
+  }
+  
+  .tourisme-flex-beige{
+	  flex :1;
+	  background-color: #f5eee9;
+	  height: 100%;
+  }
+  
+  .tourisme-flex-blanche{
+	  flex :1;
+	  background-color: #FFFFFF;
+	  height: 100%;
+  }
+  
+  .tourisme-flex-rougeclair{
+	  flex :1;
+	  background-color: #5f353f;
+	  height: 100%;
+  }
+  
+  .tourisme-flex-rouge{
+	  flex :1;
+	  background-color: #4f202b;
+	  height: 100%;
+  }
+  
+  #footer{
+	  width: 100%;
+	  background-color: #1f070c;
+  }
+  
+  #footer-table{
+	  display: table;
+	  width: 50%;
+	  margin: auto;
+	  text-align: center;
+  }
+  
+  .footer-cell{
+	  display: table-cell;
+  }
+  
+  .footer-cell a, .footer-cell label{
+	  text-decoration: none;
+	  font-family: Din_Regular;
+	  font-size: 16px;
+	  color : #FFFFFF;
+  }
+  
+  #legales-container{
+	  width: 100%;
+	  background-color: #FFFFFF;
+  }
+  
+  #legales-contenu{
+	  width: 65%;
+	  margin: auto;
+	  text-align: left;
+  }
+  
+  .legales-titre{
+	  font-family: Din_Bold;
+	  font-size: 18px;
+	  color : #4f202b;
+  }
+  
+  .legales-textes{
+	  font-family: Din_Regular;
+	  font-size: 18px;
+	  color : #4f202b;
+  }
+  
+  .legales-href{
+	  text-decoration: none;
+	  color: #4f202b;
+  }
+  
+  .header-reserver{
+	  text-decoration: none;
+	  color: #4f202b;
+	  cursor: pointer;
+	  padding: 5px;
+  }
+  
+  #header-drapeaux{
+	  position: absolute;
+	  display: block;
+	  left: 15%;
+	  top: 30px;
+	  width: 40px !important;
+	  height: 25px !important;
+	  overflow: hidden;
+	  cursor: pointer;
+	  background-repeat: no-repeat;
+	  background-size: 200%;
+	  z-index: 2;
+  }
+  
+  #header-drapeaux:hover{
+	  background-position: right;
+  }
+  
+  #infos-contacthotel{
+	  width: 50%;
+	  min-width: 100px;
+  }
+  
+  #logoContactHotel{
+	  margin-left: -40%;
+  }
+  
+  @media only screen and (max-width: 1200px) 
+  {
+  
+	  #header-menu-titre-principal h1{
+		  font-size: 50px;
+		  margin-top: 70px;
+		  line-height: normal;
+	  }
+  
+	  #header-menu-titre-secondaire label{
+		  font-size: 12px;
+	  }
+  
+	  #header-menu-tel{
+		  font-size: 16px; 
+		  right: 0px;
+		  top: 0px;
+	  }
+  
+	  #header-drapeaux{
+		  left: 25px;
+		  top: 25px;
+	  }
+  
+	  #header-menu-tel-numero{
+		  background-position: center;
+		  background-size: contain;
+	  }
+  
+	  #header-menu-titre-secondaire{
+		  padding: 8px;
+		  //margin-left: -91.7px;
+		  margin-top: -70px;
+	  }
+  
+	  #header-menu-titre-principal-img{
+		  background-position: center;
+		  background-size: 450px;
+	  }
+  
+	  #header-menu-tel-img{
+		  height: 20px;
+		  width: 20px;
+	  }
+  
+	  #header-menu-tel-img img{
+		  height: 20px;
+		  width: 20px;
+	  }
+  
+	  .index-photos-img{
+		  border: 10px solid transparent;
+	  }
+  
+	  h1>span{
+		  font-size: 17px;
+		  margin-top:-35px;
+	  }
+	  /*.tourisme-bloc{
+		  width: 100%;
+		  margin: auto;
+	  }
+  
+	  .tourisme-contenu-gauche, .tourisme-contenu-droite{
+		  width: 300px;
+	  }
+  
+	  .tourisme-img{
+		  width: 100%;
+		  height: auto;
+	  }
+  
+	  .tourisme-table{
+		  width: 100%;
+	  }*/
+  
+	  .tourisme-contenu-gauche{
+		  margin-right: 20px;
+		  width: auto;
+		  float: right;
+	  }
+  
+	  .tourisme-contenu-droite{
+		  margin-left: 20px;
+		  width: auto;
+	  }
+  
+	  .tourisme-img-gauche, .tourisme-img-droite{
+		  width: 400px;
+	  }
+  
+	  /*.tourisme-label{
+		  margin-left: auto;
+	  }*/
+  
+	  /*.tourisme-table{
+		  width: 448px;
+		  float: left;
+	  }*/
+  
+	  .tourisme-table-gauche, .tourisme-table-droite{
+		  width: 400px;
+	  }
+  
+	  .tourisme-img-gauche, .tourisme-label-gauche, .tourisme-table-gauche, .tourisme-label-gauche-blanc{
+		  float: right;
+	  }
+  
+	  .tourisme-img-droite, .tourisme-label-droite, .tourisme-table-droite, .tourisme-label-droite-blanc{
+		  float: left;
+	  }
+  
+	  .tourisme-label-droite, .tourisme-label-droite-blanc{
+		  margin-left: auto;
+		  width: 400px;
+	  }
+  
+	  .tourisme-label-gauche, .tourisme-label-gauche-blanc{
+		  padding-left: 20px;
+		  margin-left: auto;
+		  width: 420px;
+	  }
+  
+	  #logoContactHotel{
+	  margin-left: -10%;
+  }
+  
+  }
+  
+  @media only screen and (max-width: 900px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  
+	  .tourisme-bloc-flex{
+		  display: block;
+		  flex-direction: column;
+		  height: auto;
+		  margin-top: -10px;
+	  }
+  }
+  
+  @media only screen and (max-width: 900px) 
+  {
+  
+	  #header-menu-titre-principal h1{
+		  font-size: 36px;
+	  }
+  
+	  #header-menu-titre-secondaire label{
+		  font-size: 10px;
+	  }
+  
+	  #header-menu-tel{
+		  margin-top: 30px;
+		  top: 30px;
+		  position: absolute;
+		  right: auto;
+		  bottom: -20px;
+		  font-size: 14px;
+		  width: 100%;
+		  padding-left: 10px;
+		  text-align: left;
+	  }
+  
+	  #header-menu-tel-numero{
+		  background-image: none !important;
+	  }
+  
+	  #header-menu-tel-numero{
+		  background-size: 10px;
+		  background : no-repeat;
+	  }
+  
+	  #header-menu-resp{
+		  display : block;
+	  }
+  
+	  #header-menu{
+		  display: none;
+	  }
+  
+	  #header-menu-titre-principal{
+		  margin: auto;
+	  }
+  
+	  #header-menu-titre-principal-img{
+		  background-size: 400px;
+		  background-position: center;
+		  width: 350px;
+	  }
+  
+	  #header-menu-titre-secondaire{
+		  padding: 5px;
+		  //margin-left: -74.7px;
+		  margin-top: -100px;
+	  }
+  
+	  #header-menu-degrade, #header-menu-degrade-2{
+		  display: none;
+	  }
+  
+	  .hotel-picto-img img{
+		  width: 60%;
+		  height: auto;
+	  }
+  
+	  .hotel-adherent-img img{
+		  width: 60%;
+		  height: auto;
+	  }
+  
+	  .index-photos-img{
+		  border: 5px solid transparent;
+	  }
+  
+	  .tablecell-tarifs{
+		  display: block;
+		  padding-left: 8%;
+	  }
+  
+	  .index-tarifs-sous-titre-droit{
+		  padding-left: 0px;
+	  }
+  
+	  .index-space{
+		  height: 70px;
+	  }
+  
+	  .infos-table{
+		  width: 65%;
+	  }
+  
+	  .infos-tablecell{
+		  display: block;
+		  padding-left: 0px;
+		  width: 40%;
+		  margin: auto;
+	  }
+  
+	  .infos-tablecell-droite{
+		  display: block;
+		  padding-left: 0px;
+		  width: 40%;
+		  margin: auto;
+	  }
+  
+	  .form-col{
+		  width: 100%;
+		  float: none;
+	  }
+  
+	  .tourisme-bloc-flex{
+		  //display: flex;
+		  flex-direction: column;
+		  height: auto;
+		  margin-top: -10px;
+	  }
+  
+	  .tourisme-flex-beige, .tourisme-flex-rougeclair{
+		  //display: block;
+		  width: 100%;
+		  order: 1;
+	  }
+  
+	  .tourisme-flex-blanche, .tourisme-flex-rouge{
+		  //display: block;
+		  width: 100%;
+		  order: 2;
+	  }
+  
+	  .tourisme-contenu-gauche, .tourisme-contenu-droite{
+		  width: 50%;
+		  margin: auto;
+	  }
+  
+	  .tourisme-img-gauche, .tourisme-table-gauche, .tourisme-label-gauche, .tourisme-contenu-gauche, .tourisme-img-droite, .tourisme-table-droite, .tourisme-label-droite, .tourisme-contenu-droite, .tourisme-label-gauche-blanc, .tourisme-label-droite-blanc{
+		  float: none;
+	  }
+  
+	  .tourisme-label-gauche, .tourisme-label-droite, .tourisme-label-gauche-blanc, .tourisme-label-droite-blanc{
+		  width: auto;
+		  padding-left: 0px;
+		  margin-bottom: 20px;
+	  }
+  
+	  .tourisme-table-gauche, .tourisme-img-gauche, .tourisme-table-droite, .tourisme-img-droite{
+		  width: 100%;
+	  }
+  
+	  .hotel-adherent-img{
+		  display: block;
+		  width: 150px;
+		  margin: auto;
+		  margin-bottom: 15px;
+	  }
+  
+	  #hotel-adherent-titre{
+		  display: block;
+		  margin-bottom: 15px;
+	  }
+  
+	  .hotel-picto-img{
+		  display: block;
+		  width: 120px;
+		  margin: auto;
+		  margin-bottom: 15px;
+	  }
+  
+	  #index-label-description-hotel, #index-label-description-chambres{
+		  width: 90%;
+	  }
+  
+	  .infos-table{
+		  width: 90%;
+	  }
+  
+	  .infos-tablecell, .infos-tablecell-droite{
+		  width: 100%;
+	  }	
+  
+	  .infos-tablerow, .infos-tablecell-picto{
+		  display: block;
+		  text-align: center;
+	  }
+  
+	  h1>span{
+		  font-size: 14px;
+		  margin-top:-15px;
+	  }
+  
+	  #logoContactHotel{
+	  margin-left: none;
+  }
+  
+  }
+  
+  @media only screen and (max-width: 550px){
+  
+	  #header-menu-titre-secondaire{
+		  display: none;
+	  }
+  
+	  #header-menu-titre-principal{
+		  margin-top: 20px;
+	  }
+  
+	  #header-menu-titre-principal-img{
+		  background-image: none !important ;
+		  width: auto;
+		  height: auto;
+	  }
+  
+	  #header-menu-titre-principal h1{
+		  margin-top: 0;
+	  }
+  
+	  #header-menu-tel{
+		  text-align: center;
+		  margin-top: 50px;
+		  bottom: 0;
+		  top : 0;
+		  padding-left: 0;
+	  }
+  
+	  #header-drapeaux{
+		  top: 65px;
+		  width: 30px !important;
+	  }
+  
+	  #index-hotel, #index-chambres, #index-photos, #index-tarifs, #index-reservation, #index-infos{
+		  padding-top: 10%;
+	  }
+  
+	  #reservation-form{
+		  width: 280px;
+	  }
+  
+	  #index-tarifs-table{
+		  display: block;
+	  }
+  
+	  h1>span{
+		  font-size: 14px;
+		  margin-top:-35px;
+		  padding-top: 10px;
+	  }
+  
+  }
+  
+  
+  
